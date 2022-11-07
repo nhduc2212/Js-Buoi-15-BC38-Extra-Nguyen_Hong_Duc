@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section class="ex1">
+      <header><h1>Personal income tax calculator</h1></header>
+      <div class="name-container">
+        <div class="name-header ex1-header">
+          <h2>Please give us your name</h2>
+        </div>
+        <input
+          type="text"
+          placeholder="your name"
+          id="ex1-name"
+          class="ex1-name inputs"
+        />
+      </div>
+      <div class="annual-income-input-container">
+        <div class="annual-income-input-header ex1-header">
+          <h2>Please tell us sum of your income this (that) year in VND</h2>
+        </div>
+        <input
+          type="number"
+          placeholder="Your income this year"
+          id="ex1-income"
+          class="ex1-income inputs"
+        />
+      </div>
+
+      <div class="dependants-container">
+        <div class="dependants-header ex1-header">
+          <h2>Please tell us How many dependant do you have?</h2>
+        </div>
+        <input
+          type="number"
+          placeholder="Number of your dependant"
+          id="ex1-dependant"
+          class="ex1-dependant inputs"
+        />
+      </div>
+      <button id="btn-ex1" onclick="ex1()">Calculate!</button>
+      <div id="ex1-result" class="ex1-result results"></div>
+    </section>
+
+    <section class="ex2">
+      <header><h1>Bill calculator</h1></header>
+      <div class="client-code">
+        <div class="client-code-header ex2-header">Your client code</div>
+        <input
+          type="text"
+          id="client-code"
+          placeholder="type in your client code, provided in the contract or on the latest commercial invoice"
+        />
+      </div>
+
+      <div class="client-type">
+        <div class="client-type-header ex2-header">Type of client</div>
+        <select name="client-type" id="client-type">
+          <option value="" selected disabled hidden>Choose one</option>
+          <option value="DN">Enterprise</option>
+          <option value="ND">Household</option>
+        </select>
+      </div>
+
+      <div
+        class="connection-port-count ex2-header"
+        id="connection-port-count-container"
+      >
+        <input
+          type="number"
+          id="connection-port-count"
+          placeholder="How many connection are you using?"
+          value="0"
+        />
+      </div>
+
+      <div class="premium-connection-port-count ex2-header">
+        <input
+          type="number"
+          placeholder="How many premium connection are you using?"
+          name="premium-connection-port-count"
+          id="premium-connection-port-count"
+        />
+      </div>
+      <button class="btn-ex2" onclick="ex2()">Issue!</button>
+    </section>
+
+    <div class="ex2-result results" id="ex2-result"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

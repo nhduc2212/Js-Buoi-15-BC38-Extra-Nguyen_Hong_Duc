@@ -1,0 +1,47 @@
+* {
+  padding: 0 0;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+
+.ex1,
+.ex2 {
+  box-shadow: 2px 2px #999;
+  margin-top: 20px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid rgb(228, 228, 228);
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+input {
+  width: 80%;
+  text-align: center;
+}
+
+.ex1-header,
+.ex2-header {
+  margin-top: 20px;
+}
+
+.connection-port-count {
+  display: none;
+}
+
+.results {
+  text-align: center;
+}
